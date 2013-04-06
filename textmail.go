@@ -89,11 +89,11 @@ type Formatter struct {
 }
 
 // Converts HTML into nice formatted plain text.
-func Format(src []byte) ([]byte, error) {
+func Format(src []byte) (*Formatter, error) {
   doc, err := gokogiri.ParseHtml(src)
 
   if err != nil {
-    return []byte{}, err
+    return nil, err
   }
   defer doc.Free()
 
@@ -103,8 +103,17 @@ func Format(src []byte) ([]byte, error) {
   for i, link := range f.links {
     f.buf.WriteString(fmt.Sprintf("[%d] %s\n", i, link))
   }
+  return f, nil
+}
 
-  return f.buf.Bytes(), nil
+// Returns the result as byte array.
+func (self *Formatter) Bytes() []byte {
+  return self.buf.Bytes()
+}
+
+// Returns the resutl as string.
+func (self *Formatter) String() string {
+  return self.buf.String()
 }
 
 // Walks through the documents elements and populates the buffer.

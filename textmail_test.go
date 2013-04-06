@@ -28,7 +28,7 @@ func TestFormat(t *testing.T) {
     }
     file.Close()
 
-    result, err := Format(html)
+    formatter, err := Format(html)
 
     if err != nil {
       t.Fatal(err)
@@ -45,8 +45,8 @@ func TestFormat(t *testing.T) {
     }
     file.Close()
 
-    if bytes.Compare(result, txt) != 0 {
-      print(string(result))
+    if res := formatter.Bytes(); bytes.Compare(res, txt) != 0 {
+      print(string(res))
       t.Fatal("Mismatch for:", path)
     }
   }

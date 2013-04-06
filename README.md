@@ -4,7 +4,7 @@ Textmail is a [Go](http://golang.org/) library to produce nice plain text
 from HTML. It uses the [gokogiri](https://github.com/moovweb/gokogiri) library
 to parse the input.
 
-Browse the testdata directory to see some input/output samples.
+Browse the [testdata](testdata) directory to see some input/output samples.
 
 ## Use it
 
@@ -31,7 +31,7 @@ func main() {
   if err != nil {
     panic(err)
   }
-  fmt.Println(string(out))
+  fmt.Println(out.String())
 }
 ```
 
