@@ -1,0 +1,60 @@
+There are millions of projects on GitHub. Every day, people from around the
+world are working to make these projects better. Opening issues, pushing code,
+submitting Pull Requests, discussing project details — GitHub activity is a
+papertrail of progress. Have you ever wondered what all that data looks like?
+There are millions of stories to tell; you just have to look.
+
+Last year we held our first data challenge[0]. We saw incredible
+visualizations, interesting timelines and compelling analysis[1].
+
+What stories will be told this year? It's up to you!
+
+# To Enter
+
+Send a link to a GitHub repository or gist with your graph(s) along with a
+description to data@github.com[2] before *midnight, May 8th, 2013 PST*.
+
+# Data access
+
+The GitHub public timeline is a featured public dataset available on Google
+BigQuery[3]. The "timeline" table has over a year's worth of public activity
+and is approaching 100M rows. You can find even more data available in JSON
+format on The GitHub Archive project[4].
+
+You are free to use any tools you like. If you choose to use BigQuery, running
+queries against the GitHub dataset is free for the first 100GB of query
+processing. Pricing information for additional query processing is available
+here[5]. After signing up for BigQuery[6], add the project name "githubarchive".
+
+# Prizes
+
+GitHub staff will be voting on our favorite visualizations and there will be
+prizes for the top three spots:
+
+- 1st Prize: to the GitHub Shop[7]
+
+- 2nd Prize: to the GitHub Shop[8]
+
+- 3rd Prize: to the GitHub Shop[9]
+
+We will also feature the three winning entries on the GitHub blog. Winners will
+be announced the week of May 20th.
+
+# Analyzing Millions of GitHub Commits
+
+Last year Ilya Grigorik[10] and I spoke at the Strata conference, showcasing
+some of the interesting analysis and visualizations from the data challenge
+including which programming language results in most frustration (VimL),
+amusement (Ruby) and surprise (Perl).
+
+[0] https://github.com/blog/1118-the-github-data-challenge
+[1] https://github.com/blog/1162-github-data-challenge-winners
+[2] mailto:data@github.com
+[3] https://bigquery.cloud.google.com/
+[4] http://www.githubarchive.org/
+[5] https://developers.google.com/bigquery/pricing#table
+[6] https://developers.google.com/bigquery/sign-up
+[7] http://shop.github.com/
+[8] http://shop.github.com/
+[9] http://shop.github.com/
+[10] https://github.com/igrigorik
