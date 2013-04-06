@@ -6,9 +6,9 @@ to parse the input.
 
 Browse the testdata directory to see some input/output samples.
 
-# Use it
+## Use it
 
-A simple command line tool could like this.
+A simple command line tool could look like this.
 
 ```Go
 package main
@@ -35,7 +35,7 @@ func main() {
 }
 ```
 
-# Hack it
+## Hack it
 
 Clone the repo and run the tests to verify your work.
 
@@ -46,7 +46,7 @@ cd textmail
 go test
 ```
 
-# License
+## License (MIT)
 
 Copyright (c) 2013 ushi
 
